@@ -1,13 +1,57 @@
+html {
+  --color-white: #ffffff;
+  --color-offwhite: #e9f0f4;
+  --color-whitered: #ebd0d2;
+  --color-black: #17181a;
+  --color-offblack: #2d313d;
+  --color-blackred: #b93e5d;
+  --color-red: #db3e47;
+  --color-yellow: #fb9405;
+  --color-green: #2ec973;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #f3f3fd;
 }
-
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.light {
+  background: var(--color-white);
+  color: var(--color-black);
+}
+.dark {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+button.light {
+  background: var(--color-offwhite);
+  border: var(--color-offwhite);
+}
+button.dark {
+  background: var(--color-offblack);
+  border: var(--color-offblack);
+}
+button.lightdel {
+  background: var(--color-whitered);
+  border: var(--color-whitered);
+}
+button.darkdel {
+  background: var(--color-blackred);
+  color: var(--color-white);
+  border: var(--color-blackred);
+}
+button.yellow {
+  background: var(--color-yellow);
+  border: var(--color-yellow);
+}
+button.green {
+  background: var(--color-green);
+  border: var(--color-green);
 }
